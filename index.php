@@ -103,6 +103,7 @@
           <div class="widget widget-nopad">
             <div class="widget-header"> <i class="icon-list-alt"></i>
               <h3> Recent News</h3>
+              <h1>Sample Editing</h1>
             </div>
             <!-- /widget-header -->
             <div class="widget-content">
