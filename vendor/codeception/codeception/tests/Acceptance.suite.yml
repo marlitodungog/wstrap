@@ -1,0 +1,20 @@
+env:
+    codeship:
+        modules:
+            config:
+                PhpBrowser:
+                    url: 'http://127.0.0.1:8000'
+    circleci:
+        modules:
+            config:
+                PhpBrowser:
+                    url: 'http://127.0.0.1:8000'
+modules:
+  enabled:
+    - Db
+  config:
+    Db:
+      dsn: 'PDO DSN HERE'
+      user: __PG_USER__
+      password: __PG_PASSWORD__
+      dump: tests/Fixture/test.sql
