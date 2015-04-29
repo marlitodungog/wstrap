@@ -160,11 +160,5 @@ class Installer
         $io->write('Unable to update Security.salt value.');
     }
 
-    public static function postInstall(Event $event)
-    {
-        // ...
-        if (class_exists('\Cake\Codeception\Console\Installer')) {
-            \Cake\Codeception\Console\Installer::customizeCodeceptionBinary($event);
-        }
-    }
+
 }
