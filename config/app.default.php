@@ -27,7 +27,7 @@ return [
      *      /.htaccess
      *      /webroot/.htaccess
      *   And uncomment the baseUrl key below.
-     * - fullBaseUrl - A base URL to use for absolute links.
+     * - fullBaseUrl da- A base URL to use for absolute links.
      * - imageBaseUrl - Web path to the public images directory under webroot.
      * - cssBaseUrl - Web path to the public css directory under webroot.
      * - jsBaseUrl - Web path to the public js directory under webroot.
@@ -208,6 +208,13 @@ return [
      * See vendor\cakephp\cakephp\src\Database\Driver for complete list
      */
     'Datasources' => [
+        'test' => [
+            // https://codeship.com/documentation/databases/postgresql/#section-2
+            'driver' => 'Cake\Database\Driver\Postgres',
+            'username' => env('PG_USER'),
+            'password' => env('PG_PASSWORD'),
+            'database' => 'test'
+          ],
         'codeship' => [
             // https://codeship.com/documentation/databases/postgresql/#section-2
             'driver' => 'Cake\Database\Driver\Postgres',
