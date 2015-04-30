@@ -24,5 +24,9 @@ if (PHP_VERSION_ID < 70000) {
 
 require CAKE . 'basics.php';
 
+if (in_array(env('APP_ENV'), ['codeship', 'circleci'])) {
+  ConnectionManager::alias(env('APP_ENV'), 'default');
+}
+
 // Sets the initial router state so future reloads work.
 Router::reload();
