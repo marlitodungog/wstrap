@@ -219,7 +219,7 @@ return [
              * the following line and set the port accordingly
              */
             //'port' => 'nonstandard_port_number',
-            'username' => 'root',
+            'username' => 'development',
             'password' => '',
             'database' => 'test_cake',
             'encoding' => 'utf8',
@@ -255,7 +255,7 @@ return [
             'persistent' => false,
             'host' => 'localhost',
             //'port' => 'nonstandard_port_number',
-            'username' => 'root',
+            'username' => 'development',
             'password' => '',
             'database' => 'test_cake',
             'encoding' => 'utf8',
