@@ -208,6 +208,13 @@ return [
      * See vendor\cakephp\cakephp\src\Database\Driver for complete list
      */
     'Datasources' => [
+        'default' => [
+            // https://codeship.com/documentation/databases/postgresql/#section-2
+            'driver' => 'Cake\Database\Driver\Postgres',
+            'username' => env('PG_USER'),
+            'password' => env('PG_PASSWORD'),
+            'database' => 'test'
+          ],
         'test' => [
             // https://codeship.com/documentation/databases/postgresql/#section-2
             'driver' => 'Cake\Database\Driver\Postgres',
