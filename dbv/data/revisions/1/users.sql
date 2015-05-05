@@ -1,0 +1,2 @@
+INSERT INTO `users` (`id`, `username`, `password`, `group_id`, `created`, `modified`) VALUES
+(1, 'admin', '$2y$10$taOlQyJEWZQQ/Z/m2OPkleGW9Fvddp6FXpWTFQ0glI/orrH2nkD6W', 1, '2015-04-21 10:26:54', '2015-04-24 05:23:08');
