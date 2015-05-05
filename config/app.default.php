@@ -210,7 +210,7 @@ return [
     'Datasources' => [
         'default' => [
             'className' => 'Cake\Database\Connection',
-            'driver' => 'Cake\Database\Driver\Mysql',
+            'driver' => 'Cake\Database\Driver\Postgres',
             'persistent' => false,
             'host'       => getenv('DB_HOST'),
 		      'login'      => getenv('DB_USER'),
@@ -245,13 +245,12 @@ return [
          */
         'test' => [
             'className' => 'Cake\Database\Connection',
-            'driver' => 'Cake\Database\Driver\Mysql',
+            'driver' => 'Cake\Database\Driver\Postgres',
             'persistent' => false,
-            'host' => 'localhost',
-            //'port' => 'nonstandard_port_number',
-            'username' => env('MYSQL_USER'),
-            'password' => env('MYSQL_PASSWORD'),
-            'database' => 'test',
+            'host'       => getenv('DB_HOST'),
+		      'login'      => getenv('DB_USER'),
+		      'password'   => getenv('DB_PASS'),
+		      'database'   => getenv('DB_NAME'),
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'cacheMetadata' => true,
